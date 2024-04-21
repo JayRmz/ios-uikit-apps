@@ -18,6 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sia-Sd-bEz">
                                 <rect key="frame" x="84.666666666666686" y="100" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sia-Sd-bEz" secondAttribute="height" multiplier="112:57" id="J8F-Vo-s5X"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -26,6 +29,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOU-V4-73U">
                                 <rect key="frame" x="84.666666666666686" y="244" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tOU-V4-73U" secondAttribute="height" multiplier="112:57" id="af5-3R-ox0"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -34,6 +40,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJt-tF-CJ0">
                                 <rect key="frame" x="84.666666666666686" y="388" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zJt-tF-CJ0" secondAttribute="height" multiplier="112:57" id="4Mk-ka-7Uy"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -46,10 +55,13 @@
                         <constraints>
                             <constraint firstItem="tOU-V4-73U" firstAttribute="top" secondItem="sia-Sd-bEz" secondAttribute="bottom" constant="30" id="5Sr-gs-Myv"/>
                             <constraint firstItem="zJt-tF-CJ0" firstAttribute="centerX" secondItem="tOU-V4-73U" secondAttribute="centerX" id="AbY-0u-Xu8"/>
+                            <constraint firstItem="zJt-tF-CJ0" firstAttribute="height" secondItem="tOU-V4-73U" secondAttribute="height" id="DOm-3g-S5R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="sia-Sd-bEz" secondAttribute="top" constant="3" id="JGQ-Rg-pop"/>
                             <constraint firstItem="tOU-V4-73U" firstAttribute="centerX" secondItem="sia-Sd-bEz" secondAttribute="centerX" id="OHW-sI-5md"/>
+                            <constraint firstItem="tOU-V4-73U" firstAttribute="height" secondItem="sia-Sd-bEz" secondAttribute="height" id="PRP-Go-yGd"/>
                             <constraint firstItem="zJt-tF-CJ0" firstAttribute="top" secondItem="tOU-V4-73U" secondAttribute="bottom" constant="30" id="TLx-Wg-QD1"/>
                             <constraint firstItem="sia-Sd-bEz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="czf-4S-SOq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zJt-tF-CJ0" secondAttribute="bottom" constant="20" id="uYT-BT-fIZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vbh-45-T1A"/>

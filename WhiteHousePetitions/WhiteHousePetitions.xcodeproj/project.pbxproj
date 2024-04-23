@@ -13,6 +13,9 @@
 		131E228A2BD72D7200FE474A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 131E22892BD72D7200FE474A /* Base */; };
 		131E228C2BD72D7300FE474A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131E228B2BD72D7300FE474A /* Assets.xcassets */; };
 		131E228F2BD72D7300FE474A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 131E228E2BD72D7300FE474A /* Base */; };
+		131E22972BD7353500FE474A /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E22962BD7353500FE474A /* Petition.swift */; };
+		131E22992BD735CD00FE474A /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E22982BD735CD00FE474A /* Petitions.swift */; };
+		131E229B2BD77CBB00FE474A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E229A2BD77CBB00FE474A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		131E228B2BD72D7300FE474A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		131E228E2BD72D7300FE474A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		131E22902BD72D7300FE474A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		131E22962BD7353500FE474A /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		131E22982BD735CD00FE474A /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
+		131E229A2BD77CBB00FE474A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				131E228B2BD72D7300FE474A /* Assets.xcassets */,
 				131E228D2BD72D7300FE474A /* LaunchScreen.storyboard */,
 				131E22902BD72D7300FE474A /* Info.plist */,
+				131E22962BD7353500FE474A /* Petition.swift */,
+				131E22982BD735CD00FE474A /* Petitions.swift */,
+				131E229A2BD77CBB00FE474A /* DetailViewController.swift */,
 			);
 			path = WhiteHousePetitions;
 			sourceTree = "<group>";
@@ -139,8 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				131E22872BD72D7200FE474A /* ViewController.swift in Sources */,
+				131E22972BD7353500FE474A /* Petition.swift in Sources */,
 				131E22832BD72D7200FE474A /* AppDelegate.swift in Sources */,
+				131E229B2BD77CBB00FE474A /* DetailViewController.swift in Sources */,
 				131E22852BD72D7200FE474A /* SceneDelegate.swift in Sources */,
+				131E22992BD735CD00FE474A /* Petitions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

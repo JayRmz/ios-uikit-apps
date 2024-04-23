@@ -13,6 +13,8 @@
 		131E22B02BD8425E00FE474A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 131E22AF2BD8425E00FE474A /* Base */; };
 		131E22B22BD8425F00FE474A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131E22B12BD8425F00FE474A /* Assets.xcassets */; };
 		131E22B52BD8425F00FE474A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 131E22B42BD8425F00FE474A /* Base */; };
+		131E22BE2BD871ED00FE474A /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 131E22BC2BD871ED00FE474A /* level1.txt */; };
+		131E22BF2BD871ED00FE474A /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 131E22BD2BD871ED00FE474A /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		131E22B12BD8425F00FE474A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		131E22B42BD8425F00FE474A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		131E22B62BD8425F00FE474A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		131E22BC2BD871ED00FE474A /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		131E22BD2BD871ED00FE474A /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		131E22A72BD8425E00FE474A /* SwiftyWords */ = {
 			isa = PBXGroup;
 			children = (
+				131E22BC2BD871ED00FE474A /* level1.txt */,
+				131E22BD2BD871ED00FE474A /* level2.txt */,
 				131E22A82BD8425E00FE474A /* AppDelegate.swift */,
 				131E22AA2BD8425E00FE474A /* SceneDelegate.swift */,
 				131E22AC2BD8425E00FE474A /* ViewController.swift */,
@@ -125,7 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131E22BF2BD871ED00FE474A /* level2.txt in Resources */,
 				131E22B22BD8425F00FE474A /* Assets.xcassets in Resources */,
+				131E22BE2BD871ED00FE474A /* level1.txt in Resources */,
 				131E22B52BD8425F00FE474A /* Base in Resources */,
 				131E22B02BD8425E00FE474A /* Base in Resources */,
 			);
@@ -307,9 +315,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jayramirez.SwiftyWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -335,9 +347,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jayramirez.SwiftyWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

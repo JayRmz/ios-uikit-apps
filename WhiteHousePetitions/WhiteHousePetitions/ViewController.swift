@@ -103,7 +103,9 @@ class ViewController: UITableViewController {
         let decoder = JSONDecoder()
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
             petitions = jsonPetitions.results
-            tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
     

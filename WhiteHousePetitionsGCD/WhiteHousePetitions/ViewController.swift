@@ -18,7 +18,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        let urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=100"
+        //        let urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=100"
         let urlString: String
         if navigationController?.tabBarItem.tag == 0 {
             urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
@@ -26,17 +26,22 @@ class ViewController: UITableViewController {
             urlString = "https://www.hackingwithswift.com/samples/petitions-2.json"
         }
         
-        
-        if let url = URL(string: urlString) {
-            if let data = try? Data(contentsOf: url) {
-                // we're OK to parse!
-                parse(json: data)
-            } else {
-                showError()
+        DispatchQueue.global(qos: .userInitiated).async {
+            if let url = URL(string: urlString) {
+                print("URL: \(url)")
+                if let data = try? Data(contentsOf: url) {
+                    print("Data: \(data)")
+                    self.parse(json: data)
+                    return
+                }
+                
+                self.showError()
             }
-        } else {
-            showError()
         }
+        
+        
+     
+        
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(showInfoAlert))
         
@@ -80,7 +85,7 @@ class ViewController: UITableViewController {
             return
         }
         
-       
+        
         for i in petitions {
             let petitionBody = i.body.lowercased()
             let petitionTitle = i.title.lowercased()
@@ -94,9 +99,11 @@ class ViewController: UITableViewController {
     }
     
     func showError() {
-        let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
-        present(ac, animated: true)
+        DispatchQueue.main.async {
+            let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(ac, animated: true)
+        }
     }
     
     func parse(json: Data){

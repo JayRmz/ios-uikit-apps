@@ -79,22 +79,30 @@ class ViewController: UITableViewController {
         
         isFiltering = true
         
-        if filterInput.isEmpty {
-            isFiltering = false
-            tableView.reloadData()
-            return
-        }
-        
-        
-        for i in petitions {
-            let petitionBody = i.body.lowercased()
-            let petitionTitle = i.title.lowercased()
+        DispatchQueue.global(qos: .userInitiated).async {
+            if filterInput.isEmpty {
+                self.isFiltering = false
+                self.tableView.reloadData()
+                return
+            }
             
-            if petitionBody.contains(filterInput) || petitionTitle.contains(filterInput) {
-                filteredPetitions.append(i)
+            
+            for i in self.petitions {
+                let petitionBody = i.body.lowercased()
+                let petitionTitle = i.title.lowercased()
+                
+                if petitionBody.contains(filterInput) || petitionTitle.contains(filterInput) {
+                    self.filteredPetitions.append(i)
+                }
             }
         }
-        tableView.reloadData()
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        
+        
+       
         print(filteredPetitions.count)
     }
     

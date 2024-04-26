@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z21-UQ-zOU">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Handman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="103" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-bO-yZD">
+                                <rect key="frame" x="36" y="126" width="321" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3N6-oH-48W" userLabel="Image Stack View">
+                                        <rect key="frame" x="60.666666666666671" y="0.0" width="199.66666666666663" height="179.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hangman" translatesAutoresizingMaskIntoConstraints="NO" id="GkL-Bd-4kq">
+                                                <rect key="frame" x="0.0" y="0.0" width="199.66666666666666" height="179.33333333333334"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GkL-Bd-4kq" firstAttribute="centerY" secondItem="3N6-oH-48W" secondAttribute="centerY" id="7QE-Sd-zHi"/>
+                                            <constraint firstItem="GkL-Bd-4kq" firstAttribute="centerX" secondItem="3N6-oH-48W" secondAttribute="centerX" id="gIr-6F-xfL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kYF-nB-Yei" userLabel="Label Stack View">
+                                        <rect key="frame" x="132.66666666666666" y="282.33333333333331" width="56" height="35.333333333333314"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rX-Tn-vh8">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Errors:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4m-1n-aJF">
+                                                <rect key="frame" x="2.6666666666666856" y="19.666666666666686" width="50.333333333333336" height="15.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1rX-Tn-vh8" firstAttribute="centerX" secondItem="kYF-nB-Yei" secondAttribute="centerX" id="KLF-l6-tUe"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Ix-nu-r2m" userLabel="Buttons Stack View">
+                                        <rect key="frame" x="0.0" y="420.66666666666663" width="321" height="179.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eYT-rh-VIX">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="37.333333333333336"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mx-wY-5Uj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="A">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJH-rf-ubb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KC6-t1-WJX">
+                                                        <rect key="frame" x="47" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="B">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TxC-LV-hjB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W47-6J-k6J">
+                                                        <rect key="frame" x="94" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="C">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgN-nw-vdC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9P7-2Z-IH9">
+                                                        <rect key="frame" x="141" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="D">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6m-uz-lr0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdC-aR-ExP">
+                                                        <rect key="frame" x="188" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="E">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cDf-9G-Au2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyh-XS-hLd">
+                                                        <rect key="frame" x="235" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="F">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbU-6M-4Dg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfE-XU-270">
+                                                        <rect key="frame" x="282" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="G">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GvU-uQ-7ME"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8PV-4D-Vlg">
+                                                <rect key="frame" x="0.0" y="47.333333333333371" width="321" height="37.333333333333343"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-vA-oMK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="H">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24p-Wy-Zq2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-B7-eQp">
+                                                        <rect key="frame" x="47" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="I">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JcC-vU-ryT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ks-cq-Dwu">
+                                                        <rect key="frame" x="94" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="J">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqI-f1-rhQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAj-OE-aoD">
+                                                        <rect key="frame" x="141" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="K">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Yk-OA-p9e"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5u-eG-Oal">
+                                                        <rect key="frame" x="188" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="L">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ov7-0A-Xeu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiM-z9-PW6">
+                                                        <rect key="frame" x="235" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="M">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cG6-NM-Aww"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOs-Yz-Sbe">
+                                                        <rect key="frame" x="282" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="N">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrO-08-R6P"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dNW-bD-rIb">
+                                                <rect key="frame" x="0.0" y="94.666666666666742" width="321" height="37.333333333333343"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-J0-Gvo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="O">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NLd-cb-L60"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F4-av-55K">
+                                                        <rect key="frame" x="47" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="P">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUY-lO-ZeK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ0-71-dHC">
+                                                        <rect key="frame" x="94" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Q">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLg-OR-Jh8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsX-ER-NSa">
+                                                        <rect key="frame" x="141" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="R">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UE5-Yx-yg0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kis-SE-l5t">
+                                                        <rect key="frame" x="188" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="S">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvp-oE-8FV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PB2-11-VTd">
+                                                        <rect key="frame" x="235" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="T">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttw-8d-kKE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfb-3l-KLh">
+                                                        <rect key="frame" x="282" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="U">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfG-Gt-zQY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CfZ-Ox-cMN">
+                                                <rect key="frame" x="0.0" y="142" width="321" height="37.333333333333343"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqU-Ui-4hs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="V">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rEs-Ep-Agw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W67-JL-dvn">
+                                                        <rect key="frame" x="47" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="W">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWT-YL-1gl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4C-Yx-cSN">
+                                                        <rect key="frame" x="94" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="X">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wQi-6I-Nv6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Br-sD-Ep6">
+                                                        <rect key="frame" x="141" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Y">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHg-UN-sXK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPc-7X-MSB">
+                                                        <rect key="frame" x="188" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Z">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8f-aj-RJA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4Y-We-sU4">
+                                                        <rect key="frame" x="235" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="@">
+                                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKN-hc-MOm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="28" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXF-zO-3mq">
+                                                        <rect key="frame" x="282" y="0.0" width="39" height="37.333333333333336"/>
+                                                        <color key="tintColor" name="Text"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DhF-Oq-CzR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kYF-nB-Yei" firstAttribute="centerY" secondItem="O4h-bO-yZD" secondAttribute="centerY" id="YBb-Z8-7Oc"/>
+                                    <constraint firstItem="kYF-nB-Yei" firstAttribute="centerX" secondItem="O4h-bO-yZD" secondAttribute="centerX" id="YCl-ie-MlK"/>
+                                    <constraint firstItem="kYF-nB-Yei" firstAttribute="centerX" secondItem="O4h-bO-yZD" secondAttribute="centerX" id="o3k-cd-O6v"/>
+                                    <constraint firstItem="3N6-oH-48W" firstAttribute="leading" secondItem="O4h-bO-yZD" secondAttribute="leading" constant="60.666666666666686" id="xcN-MW-GOE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="O4h-bO-yZD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nah-Bu-ASe"/>
+                            <constraint firstItem="O4h-bO-yZD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="R1L-w4-Yf9"/>
+                            <constraint firstItem="O4h-bO-yZD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VTd-hr-Y6f"/>
+                            <constraint firstItem="O4h-bO-yZD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="sAV-RF-n5h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="A5a-Tb-jeZ"/>
+                    <connections>
+                        <outlet property="AButton" destination="4mx-wY-5Uj" id="UaU-Cj-dgN"/>
+                        <outlet property="BButton" destination="KC6-t1-WJX" id="kMp-ho-7YJ"/>
+                        <outlet property="atButton" destination="E4Y-We-sU4" id="deL-Lg-obf"/>
+                        <outlet property="cButton" destination="W47-6J-k6J" id="dWh-hM-3g7"/>
+                        <outlet property="dButton" destination="9P7-2Z-IH9" id="ODj-eX-mEl"/>
+                        <outlet property="dashButton" destination="IXF-zO-3mq" id="0AL-qe-fU6"/>
+                        <outlet property="eButton" destination="kdC-aR-ExP" id="nAi-Nk-gdt"/>
+                        <outlet property="fButton" destination="Nyh-XS-hLd" id="sf4-6o-4BZ"/>
+                        <outlet property="gButton" destination="FfE-XU-270" id="n0m-hx-I8s"/>
+                        <outlet property="hButton" destination="cEH-vA-oMK" id="BNr-mn-mds"/>
+                        <outlet property="iButton" destination="FsP-B7-eQp" id="eBy-R1-XVq"/>
+                        <outlet property="jButton" destination="2Ks-cq-Dwu" id="0RD-HD-JB2"/>
+                        <outlet property="kButton" destination="RAj-OE-aoD" id="U1e-HH-Sgt"/>
+                        <outlet property="lButton" destination="R5u-eG-Oal" id="a2f-3I-51o"/>
+                        <outlet property="mButton" destination="GiM-z9-PW6" id="9tQ-Lh-oNZ"/>
+                        <outlet property="nButton" destination="ZOs-Yz-Sbe" id="UBq-SZ-CNP"/>
+                        <outlet property="oButton" destination="eNE-J0-Gvo" id="9Wm-xh-mcz"/>
+                        <outlet property="pButton" destination="4F4-av-55K" id="S91-Xa-CJa"/>
+                        <outlet property="qButton" destination="nZ0-71-dHC" id="IeU-uZ-TuV"/>
+                        <outlet property="rButton" destination="AsX-ER-NSa" id="CsT-GC-1Qt"/>
+                        <outlet property="sButton" destination="kis-SE-l5t" id="hab-aT-9XU"/>
+                        <outlet property="scoreLabel" destination="G4m-1n-aJF" id="hnU-2f-UFB"/>
+                        <outlet property="tButton" destination="PB2-11-VTd" id="A6Y-ZA-aoz"/>
+                        <outlet property="uButton" destination="Rfb-3l-KLh" id="ExF-ks-jtZ"/>
+                        <outlet property="vButton" destination="BqU-Ui-4hs" id="Oez-aJ-qbg"/>
+                        <outlet property="wButton" destination="W67-JL-dvn" id="x6Y-jV-Q4K"/>
+                        <outlet property="wordLabel" destination="1rX-Tn-vh8" id="wbl-6J-Vm5"/>
+                        <outlet property="xButton" destination="u4C-Yx-cSN" id="Cqz-Fi-ZnD"/>
+                        <outlet property="yButton" destination="0Br-sD-Ep6" id="bu3-B2-1Ra"/>
+                        <outlet property="zButton" destination="GPc-7X-MSB" id="uI5-nl-IRP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999.23664122137404" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HSx-qz-yrW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z21-UQ-zOU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cms-qO-YcA">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="m7f-4R-xCb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T6c-wq-Kun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.51908396946564" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hangman" width="300" height="300"/>
+        <namedColor name="Background">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
